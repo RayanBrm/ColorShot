@@ -1,0 +1,497 @@
+/*Corps*/
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url(img/bg.png);
+    background-position: 50% 3%;
+    background-repeat: no-repeat;
+}
+
+#flex {
+    display: flex;
+}
+
+#main{
+    width: 1200px;
+}
+
+aside {
+    width: 80px;
+    background-color: #f9f9f9;
+}
+
+aside a{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+aside a:first-child{
+     position: -webkit-sticky;
+     position: sticky;
+     top:530px;
+     margin-bottom:55px;
+}
+
+aside a:last-child{
+      position: -webkit-sticky;
+      position: sticky;
+      top:585px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    color: #52575d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: #52575d;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2+div{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+a {
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    color: #8d8d8d;
+    margin:0;
+}
+
+.scrollarrow {
+    margin-top: 50px;
+    display:flex;
+    justify-content:center;
+}
+
+.material-icons{
+    color:#000;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    background-color: #f9f9f9;
+    width: 1280px;
+    height: 120px;
+    display: flex;
+}
+
+header img{
+    margin: 33px 100px 33px 70px;
+}
+
+header span{
+    display : none;
+}
+
+header nav{
+    margin-top: 45px; 
+}
+
+header nav a{
+    margin-right: 55px;
+    color: #414141;
+}
+
+header nav a:last-child{
+    margin-right:0px;
+    margin-left: 135px;
+    background-color: #8e9296;
+    padding: 10px 25px;
+    color: white;
+    border-radius:3px;
+    font-size: 14px;
+}
+
+header nav a:hover{
+    font-weight:bold;
+}
+
+/*Présentation Boutique*/
+
+section:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+    margin-left: 70px;
+    margin-right: 15px;
+}
+
+section:first-child article {
+    padding-top:70px;
+    padding-right:20px;
+}
+
+section:first-child img{
+    width:595px;
+    height:370px;
+}
+
+h1 > span {
+    color: #fed200
+}
+
+h1 + div {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: #8d8d8d
+}
+
+section:first-child article div > a {
+    padding-right: 0px;
+    margin: 23px 25px 0  0;
+    display: inline-block;
+    background-color: #fede6a;
+    padding: 10px 25px;
+    color: white;
+    border-radius:3px;
+    font-size: 14px;
+}
+
+section:first-child article div a:last-child {
+    padding-right: 0px;
+    display: inline-block;
+    background-color: #8e9296;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* 3 colonnes description*/
+section:nth-child(2){
+    margin-top:115px;
+    display:flex;
+    align-items:center;
+}
+
+section:nth-child(2) article{
+    width:200px;
+}
+
+section:nth-child(2) article:first-child{
+    padding-right: 150px;
+    margin-left:180px;
+}
+
+section:nth-child(2) article:nth-child(2){
+    padding-right: 150px;
+}
+
+section:nth-child(2) article:last-child{
+    margin-right:105px;
+}
+
+/*Catalogue*/
+
+section:nth-child(4) {
+    display: flex;
+    margin-top: 165px;
+}
+
+section:nth-child(4) img{
+    width: 601px;
+    height: 365px;
+    margin-right:50px;
+    margin-left: 70px;
+}
+
+section:nth-child(4) article{
+    margin-right:20px;
+}
+
+section:nth-child(4) article div{
+    margin-bottom:20px;
+}
+
+/*Liens vers Boutique*/
+
+section:nth-child(5){
+    display:flex;
+    margin-top:130px;
+}
+
+section:nth-child(5) a img{
+    width:305px;
+    height:284px;
+}
+
+
+section:nth-child(5) a:first-child{
+    margin-left:100px;
+    margin-right:60px;
+}
+
+section:nth-child(5) a:nth-child(2){
+    margin-right:45px;
+}
+
+section:nth-child(5) a:last-child{
+    margin-right:75px;
+}
+
+/*Tirage Photo*/
+
+section:nth-child(7) {
+    margin-top: 80px;
+    display: flex;
+    margin-right: 15px;
+    margin-left: 80px;
+}
+
+section:nth-child(7) article div{
+    margin-bottom:25px;
+}
+
+section:nth-child(7) img{
+    width:601px;
+    height:374px;
+    margin-left:50px;
+}
+
+/*Nous Trouver*/
+
+section:nth-child(9){
+    margin-top: 85px;
+}
+
+section:nth-child(9) h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+section:nth-child(9) address {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #52575d;
+    background-color: #f9f9f9;
+    padding-top:20px;
+    padding-bottom:15px;
+}
+
+section:nth-child(9) img{
+    width:100%;
+    height:571px;
+}
+
+/*Retour en haut de page */
+
+.topbutton{
+    width:100%;
+    height:50px;
+    background-color:#feed9c;
+    display:flex;
+    justify-content:center;
+}
+
+.topbutton a img{
+    width:36px;
+    height:36px;
+    padding: 7px 0 7px 0;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #f9f9f9;
+    padding-top:35px;
+    display: flex;
+    height:285px;
+}
+
+footer h2{
+    font-size:24px;
+    font-weight:normal;
+    margin-bottom:40px;
+}
+
+footer div:last-child h2{
+    margin-bottom:30px;
+}
+
+footer div:first-child{
+    margin: 0 200px 0 90px;
+}
+
+footer div:nth-child(2){
+    margin-right:130px; 
+}
+
+footer nav a{
+    display:block;
+}
+
+
+footer div:last-child p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+footer div:last-child p:last-child{
+    color:#000;
+    margin-top:20px;
+}
+
+#input {
+    display: flex;
+}
+
+input{
+    height:27px;
+}
+
+
+footer input:first-child {
+    width: 328px;
+}
+
+footer input:last-child{
+    padding:3px 1em;
+    background-color:#8c9093;
+}
+
+@media screen and (max-width: 500px) {
+
+    /*Réglage tailles*/
+    #container {
+        width: 100%;
+        margin: 0 auto;
+        background-image: none;
+        overflow:hidden;
+    }
+
+    #main, #flex, aside, footer {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    p {
+        width: 80%;
+        padding: 20px 5px;
+    }
+
+    h1, h1>span{
+        font-size:35px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    section:nth-child(n) article:nth-child(n) div {
+        width: 95%;
+        margin: 0;
+    }
+
+    /*Supprimer les éléments non nécessaire*/
+
+    footer, .topbutton, section:nth-child(2), section:nth-child(5), .scrollarrow, img {
+        display: none;
+    }
+
+    /*Header*/
+    header {
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 80px;
+        margin-bottom: 0;
+        background-color: #feed9c;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+    header span{
+        display:block;
+        font-family:Rubik,sans-serif;
+        padding:10px;
+        color: #8e9296;
+        font-size:30px;
+    }
+    header nav {
+        margin:0;
+        padding:7px;
+    }
+
+    header nav a {
+         display:none;
+    }
+
+    header nav a:last-child{
+        display:block;
+        margin:0 10px 0 0;
+    }
+
+    /*Section*/
+    
+    section:nth-child(n) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px 50px 10px;
+    }
+
+    /*Article*/
+    section article:nth-child(n) {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Traitement individuel*/
+
+    section:first-child{
+        margin-top:130px;
+    }
+
+    section:first-child article:first-child div:last-child{
+        display:flex;
+        justify-content:center;
+    }
+
+    section:nth-child(9) h2 {
+        text-align: start;
+        margin-bottom: 15px;
+    }
+
+    section:nth-child(9) address{
+        all:unset;
+        font-family: 'Poppins', sans-serif;
+        color: #52575d;
+        background-color: #f9f9f9;
+    }
+
+    aside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        background-color: #feed9c;
+    }
+
+    aside a:nth-child(n){
+        all:unset;
+    }
+
+}
