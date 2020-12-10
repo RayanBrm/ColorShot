@@ -27,19 +27,6 @@ aside a{
     justify-content:center;
 }
 
-aside a:first-child{
-     position: -webkit-sticky;
-     position: sticky;
-     top:530px;
-     margin-bottom:55px;
-}
-
-aside a:last-child{
-      position: -webkit-sticky;
-      position: sticky;
-      top:585px;
-}
-
 h1 {
     font-size: 36px;
     font-weight: 400;
@@ -87,6 +74,7 @@ p {
 }
 
 /*Header*/
+
 header {
     position: fixed;
     top: 0;
@@ -123,6 +111,11 @@ header nav a:last-child{
     font-size: 14px;
 }
 
+header nav a:last-child:hover{
+    background-color:rgba(140, 144, 147, 0.79);
+    font-weight:normal;
+}
+
 header nav a:hover{
     font-weight:bold;
 }
@@ -134,21 +127,31 @@ section:first-child {
     justify-content: space-between;
     margin-top: 170px;
     margin-left: 70px;
-    margin-right: 15px;
 }
 
-section:first-child article {
+section:first-child article:first-child {
     padding-top:70px;
     padding-right:20px;
 }
 
-section:first-child img{
+section:first-child article:last-child {
+    padding-right:20px; 
+    padding-bottom:40px;
+    overflow:hidden;
+}
+
+section:first-child article img{
     width:595px;
     height:370px;
+    box-shadow: 180px 41px #e7e8ea;
 }
 
 h1 > span {
     color: #fed200
+}
+
+h1 > span:hover {
+    font-weight:bold;
 }
 
 h1 + div {
@@ -159,7 +162,7 @@ h1 + div {
 
 section:first-child article div > a {
     padding-right: 0px;
-    margin: 23px 25px 0  0;
+    margin: 20px 25px 0  0;
     display: inline-block;
     background-color: #fede6a;
     padding: 10px 25px;
@@ -167,6 +170,11 @@ section:first-child article div > a {
     border-radius:3px;
     font-size: 14px;
 }
+
+section:first-child article div > a:hover {
+    background-color: rgba(254, 222, 106, 0.75);
+}
+
 
 section:first-child article div a:last-child {
     padding-right: 0px;
@@ -176,6 +184,10 @@ section:first-child article div a:last-child {
     color: white;
     border-radius: 3px;
     font-size: 14px;
+}
+
+section:first-child article div a:last-child:hover{
+    background-color:rgba(140, 144, 147, 0.79);
 }
 
 /* 3 colonnes description*/
@@ -249,6 +261,12 @@ section:nth-child(5) a:nth-child(2){
 section:nth-child(5) a:last-child{
     margin-right:75px;
 }
+
+section:nth-child(5) a:hover {
+    box-shadow:20px -16px #e7e8ea;
+    transition:0.5s;
+}
+
 
 /*Tirage Photo*/
 
@@ -371,6 +389,22 @@ footer input:last-child{
     background-color:#8c9093;
 }
 
+/*Aside*/
+
+aside a:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 530px;
+    margin-bottom: 55px;
+}
+
+aside a:last-child {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 585px;
+}
+
+
 @media screen and (max-width: 500px) {
 
     /*Réglage tailles*/
@@ -462,8 +496,12 @@ footer input:last-child{
     /*Traitement individuel*/
 
     section:first-child{
-        margin-top:130px;
+	margin-top: 120px;
     }
+
+    section:first-child article:first-child{
+	padding-top: 0;
+    }	
 
     section:first-child article:first-child div:last-child{
         display:flex;
